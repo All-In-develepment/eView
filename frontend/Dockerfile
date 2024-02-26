@@ -1,20 +1,19 @@
 # Define a imagem base
-FROM node:20-alpine
+FROM node:18-alpine
 
 # Cria um diretório para o aplicativo
 WORKDIR /app
 
 # Copia os arquivos do projeto
-COPY . .
+COPY ["package.json", "package-lock.json*", "./"]
+
+COPY  . .
 
 # Instala as dependências
 RUN npm install
 
-# Define a porta do aplicativo
-ENV PORT 3000
-
 # Expõe a porta na imagem
-EXPOSE 3000
+EXPOSE ${PORT}
 
 # Inicia o aplicativo
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "dev"]
