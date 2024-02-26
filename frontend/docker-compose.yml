@@ -8,3 +8,5 @@ services:
     restart: always
     ports:
       - "${PORT}:3000"
+    volumes:
+      - .:/app
