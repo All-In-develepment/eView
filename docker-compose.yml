@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  frontend:
+    build:
+      context: ./frontend/.
+      dockerfile: Dockerfile.Front
+    restart: always
+    ports:
+      - "${PORTFRONT}:${PORTFRONT}"
+    volumes:
+      - ./frontend:/app
+    networks:
+      - rootNetwork
+  
+  backend:
+    build:
+      context: ./backend/.
+      dockerfile: Dockerfile.Back
+    restart: always
+    ports:
+      - "${PORTBACK}:${PORTBACK}"
+    volumes:
+      - ./backend:/app
+    networks:
+      - rootNetwork
+
+networks:
+  rootNetwork:
+    name: rootNetwork
