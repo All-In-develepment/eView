@@ -2,7 +2,7 @@ export type GamesProps = Game[]
 
 export interface Game {
   id: number
-  date: number
+  date: any
   stars: number
   team1?: Team1
   team2?: Team2
