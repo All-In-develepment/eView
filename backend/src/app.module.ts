@@ -4,10 +4,10 @@ import { AppService } from './app.service';
 import { GamesService } from './games/games.service';
 import { GamesController } from './games/games.controller';
 import { GamesModule } from './games/games.module';
-import { TesteModule } from './teste/teste.module';
+import { GetStatisticsModule } from './get-statistics/get-statistics.module';
 
 @Module({
-  imports: [GamesModule, TesteModule],
+  imports: [GamesModule, GetStatisticsModule],
   controllers: [AppController, GamesController],
   providers: [AppService, GamesService],
 })

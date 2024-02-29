@@ -86,26 +86,29 @@ export function Posts() {
     <section className="grid min-h-screen place-items-center p-8">
       <Tabs value="trends" className="mx-auto max-w-7xl w-full mb-16 ">
         <div className="w-full flex mb-8 flex-col items-center">
-          <TabsHeader className="h-10 !w-12/12 md:w-[50rem] border border-white/25 bg-opacity-90">
-            <Tab value="trends">Trends</Tab>
-            <Tab value="frontend">Frontend</Tab>
-            <Tab value="backend">Backend</Tab>
-            <Tab value="cloud">Cloud</Tab>
-            <Tab value="ai">AI</Tab>
-            <Tab value="tools">Tools</Tab>
+          <TabsHeader 
+            className="h-10 !w-12/12 md:w-[50rem] border border-white/25 bg-opacity-90"
+            placeholder={'alguma coisa'}
+          >
+            <Tab value="trends" placeholder="">Trends</Tab>
+            <Tab value="frontend" placeholder={'alguma coisa'}>Frontend</Tab>
+            <Tab value="backend" placeholder={'alguma coisa'}>Backend</Tab>
+            <Tab value="cloud" placeholder={'alguma coisa'}>Cloud</Tab>
+            <Tab value="ai" placeholder={'alguma coisa'}>AI</Tab>
+            <Tab value="tools" placeholder={'alguma coisa'}>Tools</Tab>
           </TabsHeader>
         </div>
       </Tabs>
-      <Typography variant="h6" className="mb-2">
+      <Typography variant="h6" className="mb-2" placeholder={'alguma coisa'}>
         Latest Blog Posts
       </Typography>
-      <Typography variant="h1" className="mb-2">
+      <Typography variant="h1" className="mb-2" placeholder={'alguma coisa'}>
         Trends News
       </Typography>
       <Typography
         variant="lead"
         color="gray"
-        className="max-w-3xl mb-36 text-center text-gray-500"
+        className="max-w-3xl mb-36 text-center text-gray-500" placeholder={'alguma coisa'}
       >
         Check out what&apos;s new in the web development and tech worls! Do not
         forget to subscribe to our blog and we will notify you with the latest
@@ -131,7 +134,7 @@ export function Posts() {
         variant="text"
         size="lg"
         color="gray"
-        className="flex items-center gap-2 mt-24"
+        className="flex items-center gap-2 mt-24" placeholder={'alguma coisa'}
       >
         <ArrowSmallDownIcon className="h-5 w-5 font-bold text-gray-900" />
         VIEW MORE

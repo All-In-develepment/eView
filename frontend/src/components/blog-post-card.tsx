@@ -27,8 +27,8 @@ export function BlogPostCard({
   date,
 }: BlogPostCardProps) {
   return (
-    <Card shadow={true}>
-      <CardHeader>
+    <Card shadow={true} placeholder={'alguma coisa'}>
+      <CardHeader placeholder={'alguma coisa'}>
         <Image
           width={768}
           height={768}
@@ -37,11 +37,11 @@ export function BlogPostCard({
           className="h-full w-full scale-110 object-cover"
         />
       </CardHeader>
-      <CardBody className="p-6">
-        <Typography variant="small" color="blue" className="mb-2 !font-medium">
+      <CardBody className="p-6" placeholder={'alguma coisa'}>
+        <Typography variant="small" placeholder={'alguma coisa'} color="blue" className="mb-2 !font-medium">
           {tag}
         </Typography>
-        <Typography
+        <Typography placeholder={'alguma coisa'}
           as="a"
           href="#"
           variant="h5"
@@ -50,7 +50,7 @@ export function BlogPostCard({
         >
           {title}
         </Typography>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        <Typography className="mb-6 font-normal !text-gray-500" placeholder={'alguma coisa'}>
           {desc}
         </Typography>
         <div className="flex items-center gap-4">
@@ -58,17 +58,17 @@ export function BlogPostCard({
             size="sm"
             variant="circular"
             src={author.img}
-            alt={author.name}
+            alt={author.name} placeholder={'alguma coisa'}
           />
           <div>
-            <Typography
+            <Typography placeholder={'alguma coisa'}
               variant="small"
               color="blue-gray"
               className="mb-0.5 !font-medium"
             >
               {author.name}
             </Typography>
-            <Typography
+            <Typography placeholder={'alguma coisa'}
               variant="small"
               color="gray"
               className="text-xs !text-gray-500 font-normal"
