@@ -5,16 +5,12 @@ import { HLTV } from 'hltv';
 
 @Injectable()
 export class GetTeamStatisticsService {
-  create(createGetTeamStatisticDto: CreateGetTeamStatisticDto) {
-    return 'This action adds a new getTeamStatistic';
+  getTeam(id: number) {
+    return HLTV.getTeam({ id });
   }
 
-  findAll() {
-    return `This action returns all getTeamStatistics`;
-  }
-
-  findOne(id: number) {
-    return HLTV.getTeam({ id: id }); // Full
+  getTeamStats(id: number) {
+    return HLTV.getTeamStats({ id });
   }
 
   update(id: number, updateGetTeamStatisticDto: UpdateGetTeamStatisticDto) {
@@ -25,3 +21,13 @@ export class GetTeamStatisticsService {
     return `This action removes a #${id} getTeamStatistic`;
   }
 }
+
+/*
+todos os jogos      *
+jogos selecionados  *
+  - times           
+  - horarios
+  - ao vivo ou nao
+  - lineups
+  - mapas selecionados
+*/
