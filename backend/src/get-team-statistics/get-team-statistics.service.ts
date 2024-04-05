@@ -10,7 +10,14 @@ export class GetTeamStatisticsService {
   }
 
   getTeamStats(id: number) {
-    return HLTV.getTeamStats({ id });
+    const startDate = '2024-01-04';
+    const endDate = '2024-04-04';
+
+    return HLTV.getTeamStats({
+      id,
+      startDate,
+      endDate,
+    });
   }
 
   update(id: number, updateGetTeamStatisticDto: UpdateGetTeamStatisticDto) {

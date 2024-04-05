@@ -1,0 +1,3 @@
+{
+  "errorLens.enabledDiagnosticLevels": ["warning", "info", "error"]
+}

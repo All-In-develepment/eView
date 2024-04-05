@@ -7,6 +7,7 @@ import { GamesModule } from './games/games.module';
 import { GetStatisticsModule } from './get-statistics/get-statistics.module';
 import { GetTeamStatisticsModule } from './get-team-statistics/get-team-statistics.module';
 import { GetMatchesStatisticsModule } from './get-matches-statistics/get-matches-statistics.module';
+import { GetPlayerModule } from './get-player/get-player.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { GetMatchesStatisticsModule } from './get-matches-statistics/get-matches
     GetStatisticsModule,
     GetTeamStatisticsModule,
     GetMatchesStatisticsModule,
+    GetPlayerModule,
   ],
   controllers: [AppController, GamesController],
   providers: [AppService, GamesService],

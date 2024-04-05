@@ -5,7 +5,7 @@ import { Navbar, Footer } from "@/components";
 import Hero from "./hero";
 import Posts from "./posts";
 import Articles from "./articles";
-import GetGames from "./games/page";
+import GetGames from "./matches/page";
 
 export default function Campaign() {
   return (
