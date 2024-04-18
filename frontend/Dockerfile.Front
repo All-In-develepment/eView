@@ -6,13 +6,16 @@ WORKDIR /app
 
 RUN chown node:node /app
 
-# Copia os arquivos do projeto
-# COPY ["package.json", "package-lock.json*", "./"]
+# Instala o Next.js globalmente
+RUN npm install -g next
 
-COPY  . .
+# Copia os arquivos do projeto
+COPY ["package.json", "package-lock.json*", "./"]
 
 # Instala as dependências
 RUN npm install
+
+COPY . .
 
 # Expõe a porta na imagem
 EXPOSE ${PORT}
